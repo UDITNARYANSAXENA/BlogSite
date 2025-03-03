@@ -9,12 +9,12 @@ import blogRoute from "./routes/blog.route.js";
 
 import cors from "cors";
 const app = express();
-dotenv.config();
+dotenv.config(); 
 
 const port = process.env.PORT;
-const MONOGO_URL = process.env.MONOG_URI;
+const MONOGO_URL = process.env.MONOGO_URI;
 
-//middleware
+//middleware 
 app.use(express.json());
 app.use(cookieParser());
 app.use(
